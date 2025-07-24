@@ -269,3 +269,18 @@ type QueryPostsResponse struct {
 	PageSize int           `json:"page_size"`
 	Total    int64         `json:"total"`
 }
+
+// recap
+type CreateRecapRequest struct {
+	Content   string `json:"content" binding:"required"`
+	Video     string `json:"video"`
+	Recording string `json:"recording"`
+	Twitter   string `json:"twitter"`
+}
+
+type UpdateRecapRequest struct {
+	Content   string `json:"content" binding:"required"`
+	Video     string `json:"video"`
+	Recording string `json:"recording"`
+	Twitter   string `json:"twitter"`
+}
